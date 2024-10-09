@@ -1,10 +1,11 @@
 body {
 	margin: 0;
 	font-family: Verdana;
+	scroll-behavior: smooth;
 }
 
 header {
-	padding: 60px 0px;
+	padding: 40px 0px;
 	display: flex;
 	justify-content: center;
 }
@@ -62,15 +63,20 @@ main {
 }
 
 
-.profile img {
+.profile-card img {
 	width: 65%;
 	height: 150px;
 	border: 1px solid black;
 	border-radius: 50%;
 	display: block;
 	margin: 0 auto;
-	/*-webkit-filter: grayscale(100%);
- 	 filter: grayscale(100%);*/
+	-webkit-filter: grayscale(100%);
+ 	 filter: grayscale(100%);
+}
+
+.profile-card:hover img {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
 }
 
 
